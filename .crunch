@@ -19,6 +19,7 @@
 				"_footer.less",
 				"_navbar.less",
 				"_page-contents.less",
+				"_pricing-tables.less",
 				"_variables.less",
 				"bootstrap/alerts.less",
 				"bootstrap/badges.less",

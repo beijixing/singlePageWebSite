@@ -85,6 +85,28 @@ body {
 
 //Impact
 #impact {
+	@media (max-width: @screen-xs-max) {
+		.reviews {
+			max-width: 400px;
+			.center-block();
+		}
+	}
+	@media (min-width: @screen-md-min) {
+		.review-item-4 {
+			display: none;
+		}
+	}
+
+	@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+		.review-item-5 {
+			height: 474px;
+			overflow: hidden;
+			img {
+				width:100%;
+			}
+		}
+	}
+
 	.hreview {
 		position: relative;
 		padding: 0 10px;
@@ -116,14 +138,6 @@ body {
 				color: @gray-lighter;
 			}
 		}
-
-		//@media (min-width: @screen-md-min) {
-		//	.make-md-column(4);
-		//}
-        //
-		//@media (max-width: @screen-sm-max) {
-		//	.make-sm-column(6);
-		//}
 	}
 	.review-item-4 .caption {
 		top:0;
@@ -144,4 +158,26 @@ body {
 	}
 
 
+}
+
+#features, #impact, #signup {
+	padding-top: 36px;
+	padding-bottom: 48px;
+	h1 {
+		font-size:5em;
+		color: @gray;
+		line-height:1.3;
+		padding-bottom:24px;
+	}
+}
+
+//adjust section headings for extra-small viewports only
+@media (max-width: @screen-xs-max) {
+	#features, #impact, #signup {
+		margin-left: 30px;
+		margin-right:30px;
+		h1 {
+			font-size:3em;
+		}
+	}
 }
